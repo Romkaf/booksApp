@@ -17,6 +17,7 @@ module.exports = {
 		path: path.join(__dirname, 'dist'),
 	},
 	resolve: {
+		extensions: ['.jsx', '.js', '.css'],
 		alias: {
 			'@styles': path.resolve(__dirname, 'src/styles'),
 			'@components': path.resolve(__dirname, 'src/components'),
@@ -78,7 +79,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(woff|woff2)$/,
+				test: /\.(woff|woff2|png)$/,
 				use: ['file-loader'],
 			},
 		],

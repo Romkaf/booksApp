@@ -1,0 +1,19 @@
+.root {
+	width: 100%;
+	margin-bottom: 1rem;
+	border-collapse: collapse;
+}
+
+.row {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.ceil {
+	vertical-align: bottom;
+	border-bottom: 2px solid var(--grey);
+	padding: 0.75rem;
+	border-top: 1px solid var(--grey);
+	text-align: inherit;
+}
