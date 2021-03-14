@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import cx from 'classnames';
 import styles from './Filter.css';
 
-const Filter = ({ label: title }) => {
+const Filter = ({ label: title, value, onChange }) => {
 	const { field, input, label, labelSmall } = styles;
-	const [value, setValue] = useState('');
 	const classLabel = cx(label, { [labelSmall]: value });
 
-	const handleInputChange = (evt) => setValue(evt.target.value);
+	const handleInputChange = (evt) => onChange(evt.target.value);
 
 	return (
 		<div className={field}>

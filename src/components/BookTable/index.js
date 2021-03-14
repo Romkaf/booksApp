@@ -1,1 +1,1 @@
-export { default } from './BookTable';
+export { default } from './BookTableContainer';
