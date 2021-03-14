@@ -22,6 +22,7 @@ module.exports = {
 			'@styles': path.resolve(__dirname, 'src/styles'),
 			'@components': path.resolve(__dirname, 'src/components'),
 			'@models': path.resolve(__dirname, 'src/models'),
+			'@api': path.resolve(__dirname, 'src/api'),
 		},
 	},
 	optimization: {
