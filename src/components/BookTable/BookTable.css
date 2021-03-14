@@ -17,3 +17,9 @@
 	border-top: 1px solid var(--grey);
 	text-align: inherit;
 }
+
+@media (max-width: 430px) {
+	.ceil {
+		padding: 0.25rem;
+	}
+}

@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Row from '@components/BookRow';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchBooks } from '@models/actions';
 import styles from './BookTable.css';
-import PropTypes from 'prop-types';
 
-const BookTable = ({ books }) => {
+const BookTable = () => {
 	const { root, row, ceil } = styles;
+	const { books, loading, error } = useSelector((state) => state.books);
+	const dispatch = useDispatch();
+
+	useEffect(() => dispatch(fetchBooks()), []);
+
+	if (loading) {
+		return <h1>Loading...</h1>;
+	}
+
+	if (error) {
+		return <h2>{error}</h2>;
+	}
+
 	return (
 		<div>
 			<table className={root}>
@@ -25,10 +39,6 @@ const BookTable = ({ books }) => {
 			</table>
 		</div>
 	);
-};
-
-BookTable.propTypes = {
-	books: PropTypes.array,
 };
 
 export default BookTable;

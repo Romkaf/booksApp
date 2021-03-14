@@ -6,7 +6,7 @@ import {
 
 import { fetchGetBooks } from '@api';
 
-const fetchBooks = () => ({
+const fetchBooksRequest = () => ({
 	type: FETCH_BOOKS,
 });
 
@@ -20,12 +20,12 @@ const fetchBooksError = (err) => ({
 	payload: err,
 });
 
-export const uploadBooks = (...rest) => async (dispatch) => {
+export const fetchBooks = () => async (dispatch) => {
 	try {
-		dispatch(fetchBooks());
-		const res = await fetchGetBooks(...rest);
-		dispatch(fetchBooksSuccess(res));
+		dispatch(fetchBooksRequest());
+		const res = await fetchGetBooks();
+		dispatch(fetchBooksSuccess(res.data));
 	} catch (err) {
-		dispatch(fetchBooksError(err));
+		dispatch(fetchBooksError(err.message));
 	}
 };

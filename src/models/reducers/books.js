@@ -20,9 +20,17 @@ export default (state = initialState, action) => {
 			};
 
 		case FETCH_BOOKS_SUCCESS:
+			const booksArr = action.payload.items.map((it) => ({
+				id: it.id,
+				title: it.volumeInfo.title,
+				authors: it.volumeInfo?.authors?.join(', ') || 'not specified',
+				publisher: it.volumeInfo?.publisher || 'not specified',
+				date: it.volumeInfo?.publishedDate?.slice(0, 4) || 'not specified',
+			}));
+
 			return {
-				books: action.payload,
-				loading: true,
+				books: booksArr,
+				loading: false,
 				error: null,
 			};
 
