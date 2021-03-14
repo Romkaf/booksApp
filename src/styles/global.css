@@ -11,6 +11,8 @@
 :root {
 	--main-bg-color: #f5f5f5;
 	--grey: #bcbfc2;
+	--white: #ffffff;
+	--light-black: rgba(0, 0, 0, 0.2);
 }
 
 body {

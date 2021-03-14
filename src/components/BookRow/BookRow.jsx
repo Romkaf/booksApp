@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 const Row = ({ item }) => {
 	const { ceil } = styles;
 	const { title, authors, date, publisher } = item;
-	// const dateYear = date.slice(0, 4);
 
 	return (
 		<tr>

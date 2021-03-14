@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBooks } from '@models/actions';
 import BookTable from './BookTable';
+import Spinner from '@components/Spinner';
 
 const BookTableContainer = () => {
 	const {
@@ -13,7 +14,7 @@ const BookTableContainer = () => {
 	useEffect(() => dispatch(fetchBooks(filters)), [filters]);
 
 	if (loading) {
-		return <h1>Loading...</h1>;
+		return <Spinner />;
 	}
 
 	if (error) {
