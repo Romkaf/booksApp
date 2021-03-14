@@ -1,0 +1,42 @@
+.field {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 2%;
+	padding: 10px 0;
+}
+
+.label {
+	position: absolute;
+	left: 4%;
+	max-width: 100%;
+	transition: transform 0.25s ease, font-size 0.25s ease;
+}
+
+.labelSmall {
+	transform: translateY(-14px);
+	font-size: 13px;
+}
+
+.input {
+	width: 100%;
+	padding: 15px 5px 10px 10px;
+	border-radius: 6px;
+	border: solid 1px var(--grey);
+	font-family: inherit;
+	background-color: transparent;
+	background-color: white;
+	transition: box-shadow 0.25s ease;
+}
+
+.input:hover,
+.input:focus {
+	box-shadow: 0 0 5pt 1.5pt var(--grey);
+	outline: none;
+}
+
+.input:focus + .label {
+	transform: translateY(-15px);
+	font-size: 13px;
+}

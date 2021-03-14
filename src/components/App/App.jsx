@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './App.css';
 import BookTable from '@components/BookTable';
-import Filter from '@components/Filter';
+import Filters from '@components/Filters';
 
 const App = () => {
 	const books = [
@@ -31,7 +31,7 @@ const App = () => {
 	return (
 		<div className={styles.root}>
 			<h1 className={styles.heading}>Books App</h1>
-			<Filter />
+			<Filters />
 			<BookTable books={books} />
 		</div>
 	);
