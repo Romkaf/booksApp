@@ -4,6 +4,10 @@
 	border-collapse: collapse;
 }
 
+.wrapper {
+	overflow: hidden;
+}
+
 .row {
 	display: table-header-group;
 	vertical-align: middle;
@@ -19,8 +23,9 @@
 	text-align: inherit;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
 	.ceil {
-		padding: 0.25rem;
+		padding: 0.15rem;
+		font-size: 16px;
 	}
 }

@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import styles from './BookTable.css';
 
 const BookTable = ({ books }) => {
-	const { root, row, ceil } = styles;
+	const { root, wrapper, row, ceil } = styles;
 
 	return (
-		<div>
+		<div className={wrapper}>
 			<table className={root}>
 				<thead className={row}>
 					<tr>

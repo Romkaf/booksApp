@@ -10,15 +10,15 @@
 .page {
 	border: 1px solid var(--grey);
 	border-radius: 100%;
-	width: 32px;
-	height: 32px;
+	width: 43px;
+	height: 43px;
 	margin: 0 10px;
 	margin-bottom: 10px;
 	cursor: pointer;
 }
 
 .pageCurrent {
-	border: 2px solid var(--grey);
+	border: 2px solid var(--semi-black);
 	font-weight: 700;
 }
 

@@ -13,11 +13,14 @@
 	--grey: #bcbfc2;
 	--white: #ffffff;
 	--light-black: rgba(0, 0, 0, 0.2);
+	--semi-black: rgba(0, 0, 0, 0.5);
 	--beige: #ffecb5;
 	--brown: #664d03;
 	--light-beige: #fff3cd;
 }
 
 body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
 	background-color: var(--main-bg-color);
 }

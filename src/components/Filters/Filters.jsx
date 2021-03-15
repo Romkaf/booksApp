@@ -1,5 +1,6 @@
 import React from 'react';
 import Filter from './Filter';
+import PropTypes from 'prop-types';
 import styles from './Filters.css';
 
 const Filters = ({ filters }) => {
@@ -17,6 +18,10 @@ const Filters = ({ filters }) => {
 			</ul>
 		</div>
 	);
+};
+
+Filters.propTypes = {
+	filters: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default Filters;

@@ -5,9 +5,10 @@
 }
 
 .heading {
+	font-family: 'Playfair Display', Helvetica, sans-serif;
 	align-self: center;
 	margin: 0.5rem 1rem 0.5rem 0;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	font-weight: normal;
 }
 
