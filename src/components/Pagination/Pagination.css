@@ -1,0 +1,25 @@
+.root {
+	display: flex;
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.page {
+	border: 1px solid var(--grey);
+	border-radius: 100%;
+	padding: 5px 10px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.pageCurrent {
+	border: 2px solid var(--grey);
+	font-weight: 700;
+}
+
+.page:hover,
+.page:focus {
+	box-shadow: 0 0 5pt 1.5pt var(--grey);
+	outline: none;
+}

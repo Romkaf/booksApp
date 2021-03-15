@@ -22,9 +22,14 @@ const fetchBooksError = (err) => ({
 
 export const fetchBooks = (param) => async (dispatch) => {
 	try {
-		const { titleFilter, authorFilter } = param;
+		const { titleFilter, authorFilter, currentPage, perPage } = param;
 		dispatch(fetchBooksRequest());
-		const res = await fetchGetBooks(titleFilter, authorFilter);
+		const res = await fetchGetBooks(
+			titleFilter,
+			authorFilter,
+			currentPage,
+			perPage,
+		);
 		dispatch(fetchBooksSuccess(res.data));
 	} catch (err) {
 		dispatch(fetchBooksError(err.message));

@@ -9,10 +9,15 @@ const BookTableContainer = () => {
 	const {
 		books: { books, loading, error },
 		filters,
+		pagination,
 	} = useSelector((state) => state);
+
 	const dispatch = useDispatch();
 
-	useEffect(() => dispatch(fetchBooks(filters)), [filters]);
+	useEffect(() => dispatch(fetchBooks({ ...filters, ...pagination })), [
+		filters,
+		pagination,
+	]);
 
 	if (loading) {
 		return <Spinner />;

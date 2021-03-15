@@ -6,6 +6,7 @@ import {
 
 const initialState = {
 	books: [],
+	totalCount: 0,
 	loading: false,
 	error: null,
 };
@@ -15,6 +16,7 @@ export default (state = initialState, action) => {
 		case FETCH_BOOKS:
 			return {
 				books: [],
+				totalCount: 0,
 				loading: true,
 				error: null,
 			};
@@ -31,6 +33,7 @@ export default (state = initialState, action) => {
 
 			return {
 				books: booksArr,
+				totalCount: action.payload.totalItems,
 				loading: false,
 				error: null,
 			};
@@ -38,6 +41,7 @@ export default (state = initialState, action) => {
 		case FETCH_BOOKS_ERROR:
 			return {
 				books: [],
+				totalCount: 0,
 				loading: false,
 				error: action.payload,
 			};
