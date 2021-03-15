@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { createPages } from './createPages';
+import { createPages } from '@utils/createPages';
 import { setCurrentPage } from '@models/actions';
 import Pagination from './Pagination';
 

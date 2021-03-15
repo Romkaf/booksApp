@@ -24,6 +24,7 @@ module.exports = {
 			'@models': path.resolve(__dirname, 'src/models'),
 			'@api': path.resolve(__dirname, 'src/api'),
 			'@constants': path.resolve(__dirname, 'src/constants'),
+			'@utils': path.resolve(__dirname, 'src/utils'),
 		},
 	},
 	optimization: {
@@ -81,7 +82,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(woff|woff2|png)$/,
+				test: /\.(woff|woff2)$/,
 				use: ['file-loader'],
 			},
 		],
