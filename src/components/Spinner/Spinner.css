@@ -1,4 +1,4 @@
-.spinner {
+.root {
 	display: inline-block;
 	width: 100%;
 	height: 60px;
@@ -6,7 +6,7 @@
 	margin-right: 0;
 }
 
-.spinner:after {
+.root:after {
 	content: ' ';
 	display: block;
 	width: 40px;

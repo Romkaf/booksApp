@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchBooks } from '@models/actions';
 import BookTable from './BookTable';
 import Spinner from '@components/Spinner';
+import ErrorIndicator from '@components/ErrorIndicator';
 
 const BookTableContainer = () => {
 	const {
@@ -18,7 +19,7 @@ const BookTableContainer = () => {
 	}
 
 	if (error) {
-		return <h2>{error}</h2>;
+		return <ErrorIndicator text={error} />;
 	}
 
 	return <BookTable books={books} />;

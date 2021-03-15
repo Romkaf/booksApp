@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import Filter from './Filter';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAuthorFilter, setTitleFilter } from '@models/actions';
@@ -32,7 +31,5 @@ const Filters = () => {
 		</div>
 	);
 };
-
-Filters.propTypes = {};
 
 export default Filters;

@@ -1,0 +1,33 @@
+.root {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	padding: 25px 15px;
+	color: var(--brown);
+	background-color: var(--light-beige);
+	border-color: var(--beige);
+	animation: show 7s linear forwards;
+}
+
+.root span {
+	font-size: 1.2rem;
+}
+
+@keyframes show {
+	0% {
+		transform: translateY(-100%);
+	}
+	20% {
+		transform: translateY(0%);
+	}
+	80% {
+		transform: translateY(0%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}
