@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorIndicator should render component 1`] = `
+<div
+  className="root"
+>
+  <span>
+    Error: 
+  </span>
+</div>
+`;

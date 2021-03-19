@@ -1,10 +1,10 @@
 import React from 'react';
-import Spinner from './Spinner';
+import ErrorIndicator from './ErrorIndicator';
 import { shallow } from 'enzyme';
 
-describe('Spinner', () => {
+describe('ErrorIndicator', () => {
 	it('should render component', () => {
-		const component = shallow(<Spinner />);
+		const component = shallow(<ErrorIndicator />);
 		expect(component).toMatchSnapshot();
 	});
 });

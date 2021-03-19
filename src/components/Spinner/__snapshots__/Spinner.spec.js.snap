@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Spinner component should render Spinner component 1`] = `
+exports[`Spinner should render component 1`] = `
 <div
   className="root"
 />
