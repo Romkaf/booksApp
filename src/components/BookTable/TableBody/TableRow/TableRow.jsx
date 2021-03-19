@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './BookRow.css';
+import styles from './TableRow.css';
 import PropTypes from 'prop-types';
 
-const Row = ({ item }) => {
+const TableRow = ({ item }) => {
 	const { ceil } = styles;
 	const { title, authors, date, publisher } = item;
 
@@ -16,13 +16,13 @@ const Row = ({ item }) => {
 	);
 };
 
-Row.propTypes = {
+TableRow.propTypes = {
 	item: PropTypes.shape({
-		id: PropTypes.string,
 		title: PropTypes.string,
+		authors: PropTypes.string,
 		publisher: PropTypes.string,
 		date: PropTypes.string,
 	}),
 };
 
-export default Row;
+export default TableRow;

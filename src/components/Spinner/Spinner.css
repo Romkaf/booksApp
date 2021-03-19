@@ -3,7 +3,7 @@
 	width: 100%;
 	height: 60px;
 	margin: 100px auto;
-	margin-right: 0;
+	margin-left: 150%;
 }
 
 .root:after {

@@ -1,35 +1,27 @@
-import React from 'react';
-import Row from '@components/BookRow';
+import React, { memo } from 'react';
+import TableHead from './TableHead';
+import Pagination from '@components/Pagination';
 import PropTypes from 'prop-types';
 import styles from './BookTable.css';
+import TableBody from './TableBody';
 
-const BookTable = ({ books }) => {
-	const { root, wrapper, row, ceil } = styles;
+const BookTable = ({ books, loading }) => {
+	const { root, wrapper } = styles;
 
 	return (
 		<div className={wrapper}>
 			<table className={root}>
-				<thead className={row}>
-					<tr>
-						<th className={ceil}>Title</th>
-						<th className={ceil}>Authors</th>
-						<th className={ceil}>Publisher</th>
-						<th className={ceil}>Date</th>
-					</tr>
-				</thead>
-
-				<tbody>
-					{books.map((it) => (
-						<Row item={it} key={it.id} />
-					))}
-				</tbody>
+				<TableHead />
+				<TableBody books={books} loading={loading} />
 			</table>
+			<Pagination />
 		</div>
 	);
 };
 
 BookTable.propTypes = {
 	books: PropTypes.arrayOf(PropTypes.object),
+	loading: PropTypes.bool,
 };
 
-export default BookTable;
+export default memo(BookTable);

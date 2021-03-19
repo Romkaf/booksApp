@@ -2,12 +2,10 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBooks } from '@models/actions';
 import BookTable from './BookTable';
-import Spinner from '@components/Spinner';
-import ErrorIndicator from '@components/ErrorIndicator';
 
 const BookTableContainer = () => {
 	const {
-		books: { books, loading, error },
+		books: { books, loading },
 		filters,
 		pagination,
 	} = useSelector((state) => state);
@@ -19,15 +17,7 @@ const BookTableContainer = () => {
 		pagination,
 	]);
 
-	if (loading) {
-		return <Spinner />;
-	}
-
-	if (error) {
-		return <ErrorIndicator text={error} />;
-	}
-
-	return <BookTable books={books} />;
+	return <BookTable books={books} loading={loading} />;
 };
 
 export default BookTableContainer;

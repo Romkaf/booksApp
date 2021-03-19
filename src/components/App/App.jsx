@@ -2,15 +2,18 @@ import React from 'react';
 import styles from './App.css';
 import BookTable from '@components/BookTable';
 import Filters from '@components/Filters';
-import Pagination from '@components/Pagination';
+import ErrorIndicator from '@components/ErrorIndicator';
+import { useSelector } from 'react-redux';
 
 const App = () => {
+	const error = useSelector((state) => state.books.error);
+
 	return (
 		<div className={styles.root}>
 			<h1 className={styles.heading}>Books App</h1>
 			<Filters />
-			<Pagination />
 			<BookTable />
+			{error && <ErrorIndicator text={error} />}
 		</div>
 	);
 };
