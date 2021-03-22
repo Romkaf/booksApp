@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookTable should render component 1`] = `
+<div
+  className="wrapper"
+>
+  <table
+    className="root"
+  >
+    <Memo(TableHead) />
+    <TableBodyContainer />
+  </table>
+  <PaginationContainer />
+</div>
+`;

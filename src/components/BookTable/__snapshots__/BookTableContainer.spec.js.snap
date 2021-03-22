@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookTableContainer should render component 1`] = `
+<BookTableContainer>
+  <Memo(BookTable)
+    books={Array []}
+  >
+    <div
+      className="wrapper"
+    >
+      <table
+        className="root"
+      >
+        <Memo(TableHead)>
+          <thead
+            className="root"
+          >
+            <tr>
+              <th
+                className="ceil"
+                key="Title"
+              >
+                Title
+              </th>
+              <th
+                className="ceil"
+                key="Authors"
+              >
+                Authors
+              </th>
+              <th
+                className="ceil"
+                key="Publisher"
+              >
+                Publisher
+              </th>
+              <th
+                className="ceil"
+                key="Date"
+              >
+                Date
+              </th>
+            </tr>
+          </thead>
+        </Memo(TableHead)>
+        <TableBodyContainer
+          books={Array []}
+        >
+          <TableBody
+            books={Array []}
+          >
+            <tbody />
+          </TableBody>
+        </TableBodyContainer>
+      </table>
+      <PaginationContainer>
+        <Pagination
+          currentPage={1}
+          onPageClick={[Function]}
+          pages={Array []}
+        >
+          <ul
+            className="root"
+          />
+        </Pagination>
+      </PaginationContainer>
+    </div>
+  </Memo(BookTable)>
+</BookTableContainer>
+`;

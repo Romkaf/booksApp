@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBooks } from '@models/actions';
 import BookTable from './BookTable';
@@ -12,7 +12,7 @@ const BookTableContainer = () => {
 
 	const dispatch = useDispatch();
 
-	useEffect(() => dispatch(fetchBooks({ ...filters, ...pagination })), [
+	React.useEffect(() => dispatch(fetchBooks({ ...filters, ...pagination })), [
 		filters,
 		pagination,
 	]);
