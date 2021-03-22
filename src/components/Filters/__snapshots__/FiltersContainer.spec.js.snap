@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FiltersContainer should render component 1`] = `
+<FiltersContainer>
+  <Filters
+    filters={
+      Array [
+        Object {
+          "handler": [Function],
+          "title": "Title",
+          "value": "",
+        },
+        Object {
+          "handler": [Function],
+          "title": "Author",
+          "value": "",
+        },
+      ]
+    }
+  >
+    <div
+      className="root"
+    >
+      <h2
+        className="heading"
+      >
+        Filters
+      </h2>
+      <ul
+        className="filtersWrapper"
+      >
+        <li
+          key="Title"
+        >
+          <Filter
+            label="Title"
+            onChange={[Function]}
+            value=""
+          >
+            <div
+              className="field"
+            >
+              <input
+                className="input"
+                id="Title"
+                onChange={[Function]}
+                type="text"
+              />
+              <label
+                className="label"
+                htmlFor="Title"
+              >
+                Title
+              </label>
+            </div>
+          </Filter>
+        </li>
+        <li
+          key="Author"
+        >
+          <Filter
+            label="Author"
+            onChange={[Function]}
+            value=""
+          >
+            <div
+              className="field"
+            >
+              <input
+                className="input"
+                id="Author"
+                onChange={[Function]}
+                type="text"
+              />
+              <label
+                className="label"
+                htmlFor="Author"
+              >
+                Author
+              </label>
+            </div>
+          </Filter>
+        </li>
+      </ul>
+    </div>
+  </Filters>
+</FiltersContainer>
+`;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1616412656629" clover="3.2.0">
-  <project timestamp="1616412656630" name="All files">
-    <metrics statements="68" coveredstatements="65" conditionals="7" coveredconditionals="5" methods="29" coveredmethods="24" elements="104" coveredelements="94" complexity="0" loc="68" ncloc="68" packages="10" files="14" classes="14"/>
+<coverage generated="1616441931075" clover="3.2.0">
+  <project timestamp="1616441931076" name="All files">
+    <metrics statements="68" coveredstatements="65" conditionals="7" coveredconditionals="5" methods="29" coveredmethods="25" elements="104" coveredelements="95" complexity="0" loc="68" ncloc="68" packages="10" files="14" classes="14"/>
     <package name="App">
       <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="App.jsx" path="/Users/roman/development/react/booksApp/src/components/App/App.jsx">
@@ -82,11 +82,11 @@
       <metrics statements="13" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
       <file name="Filters.jsx" path="/Users/roman/development/react/booksApp/src/components/Filters/Filters.jsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="14" count="6" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
       </file>
       <file name="FiltersContainer.jsx" path="/Users/roman/development/react/booksApp/src/components/Filters/FiltersContainer.jsx">
         <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
@@ -101,16 +101,16 @@
       </file>
     </package>
     <package name="Filters.Filter">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="Filter.jsx" path="/Users/roman/development/react/booksApp/src/components/Filters/Filter/Filter.jsx">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="6" type="stmt"/>
-        <line num="9" count="6" type="stmt"/>
-        <line num="11" count="6" type="stmt"/>
-        <line num="13" count="6" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
       </file>
     </package>
     <package name="Pagination">
