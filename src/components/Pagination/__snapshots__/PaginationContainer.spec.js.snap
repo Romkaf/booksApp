@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginationContainer should render component 1`] = `
+<PaginationContainer>
+  <Pagination
+    currentPage={1}
+    onPageClick={[Function]}
+    pages={
+      Array [
+        1,
+        2,
+      ]
+    }
+  >
+    <ul
+      className="root"
+    >
+      <li
+        key="0"
+      >
+        <button
+          aria-label="pagination-page"
+          className="page pageCurrent"
+          onClick={[Function]}
+        >
+          1
+        </button>
+      </li>
+      <li
+        key="1"
+      >
+        <button
+          aria-label="pagination-page"
+          className="page"
+          onClick={[Function]}
+        >
+          2
+        </button>
+      </li>
+    </ul>
+  </Pagination>
+</PaginationContainer>
+`;

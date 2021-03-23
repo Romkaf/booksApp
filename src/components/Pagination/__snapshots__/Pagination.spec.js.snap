@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination should render component with props 1`] = `
+<ul
+  className="root"
+>
+  <li
+    key="0"
+  >
+    <button
+      aria-label="pagination-page"
+      className="page pageCurrent"
+      onClick={[Function]}
+    >
+      1
+    </button>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      aria-label="pagination-page"
+      className="page"
+      onClick={[Function]}
+    >
+      2
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      aria-label="pagination-page"
+      className="page"
+      onClick={[Function]}
+    >
+      3
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Pagination should render component without props 1`] = `
+<ul
+  className="root"
+/>
+`;

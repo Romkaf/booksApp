@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Pagination.css';
 
-const Pagination = ({ pages, onPageClick, currentPage }) => {
+const Pagination = ({ pages = [], onPageClick, currentPage }) => {
 	const { root, page, pageCurrent } = styles;
 
 	return (
