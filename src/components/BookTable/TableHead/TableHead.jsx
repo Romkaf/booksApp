@@ -6,15 +6,13 @@ const TableHead = () => {
 	const labels = ['Title', 'Authors', 'Publisher', 'Date'];
 
 	return (
-		<thead className={root}>
-			<tr>
-				{labels.map((label) => (
-					<th className={ceil} key={label}>
-						{label}
-					</th>
-				))}
-			</tr>
-		</thead>
+		<div className={root}>
+			{labels.map((label) => (
+				<div className={ceil} key={label}>
+					{label}
+				</div>
+			))}
+		</div>
 	);
 };
 

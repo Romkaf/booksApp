@@ -13,6 +13,7 @@ const Pagination = ({ pages = [], onPageClick, currentPage }) => {
 						className={currentPage == it ? `${page} ${pageCurrent}` : `${page}`}
 						aria-label="pagination-page"
 						onClick={onPageClick(it)}
+						tabIndex={currentPage == it ? -1 : 0}
 					>
 						{it}
 					</button>

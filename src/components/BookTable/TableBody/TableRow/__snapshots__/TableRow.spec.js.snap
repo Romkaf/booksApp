@@ -1,26 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TableRow should render component 1`] = `
-<tr>
-  <td
+<div
+  className="root"
+>
+  <div
     className="ceil"
+    key="0"
   >
     test
-  </td>
-  <td
+  </div>
+  <div
     className="ceil"
+    key="1"
   >
     test
-  </td>
-  <td
+  </div>
+  <div
     className="ceil"
-  >
-    publisher
-  </td>
-  <td
-    className="ceil"
+    key="2"
   >
     date
-  </td>
-</tr>
+  </div>
+  <div
+    className="ceil"
+    key="3"
+  >
+    publisher
+  </div>
+</div>
 `;

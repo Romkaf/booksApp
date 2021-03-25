@@ -1,21 +1,16 @@
 .root {
-	display: table-header-group;
-	vertical-align: middle;
-	border-color: inherit;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	border-bottom: 2px solid var(--grey);
 }
 
 .ceil {
-	width: 25%;
 	padding: 0.75rem;
-	border-bottom: 2px solid var(--grey);
-	border-top: 1px solid var(--grey);
-	vertical-align: bottom;
-	text-align: inherit;
 }
 
 @media (max-width: 500px) {
 	.ceil {
-		padding: 0.15rem;
+		padding: 0.35rem 0.25rem;
 		font-size: 16px;
 	}
 }

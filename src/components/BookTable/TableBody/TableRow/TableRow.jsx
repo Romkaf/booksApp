@@ -3,16 +3,18 @@ import styles from './TableRow.css';
 import PropTypes from 'prop-types';
 
 const TableRow = ({ item }) => {
-	const { ceil } = styles;
+	const { root, ceil } = styles;
 	const { title, authors, date, publisher } = item;
+	const dataArray = [title, authors, date, publisher];
 
 	return (
-		<tr>
-			<td className={ceil}>{title}</td>
-			<td className={ceil}>{authors}</td>
-			<td className={ceil}>{publisher}</td>
-			<td className={ceil}>{date}</td>
-		</tr>
+		<div className={root}>
+			{dataArray.map((it, idx) => (
+				<div className={ceil} key={idx}>
+					{it}
+				</div>
+			))}
+		</div>
 	);
 };
 

@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 
 const TableBody = ({ books = [] }) => {
 	return (
-		<tbody>
+		<div>
 			{books.map((it) => (
 				<TableRow item={it} key={it.id} />
 			))}
-		</tbody>
+		</div>
 	);
 };
 

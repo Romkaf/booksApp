@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1616592933932" clover="3.2.0">
-  <project timestamp="1616592933932" name="All files">
-    <metrics statements="68" coveredstatements="68" conditionals="8" coveredconditionals="8" methods="29" coveredmethods="29" elements="105" coveredelements="105" complexity="0" loc="68" ncloc="68" packages="10" files="14" classes="14"/>
+<coverage generated="1616756511052" clover="3.2.0">
+  <project timestamp="1616756511052" name="All files">
+    <metrics statements="69" coveredstatements="69" conditionals="10" coveredconditionals="10" methods="30" coveredmethods="30" elements="109" coveredelements="109" complexity="0" loc="69" ncloc="69" packages="10" files="14" classes="14"/>
     <package name="App">
       <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="App.jsx" path="/Users/roman/development/react/booksApp/src/components/App/App.jsx">
@@ -12,13 +12,12 @@
       </file>
     </package>
     <package name="BookTable">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <file name="BookTable.jsx" path="/Users/roman/development/react/booksApp/src/components/BookTable/BookTable.jsx">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
       </file>
       <file name="BookTableContainer.jsx" path="/Users/roman/development/react/booksApp/src/components/BookTable/BookTableContainer.jsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
@@ -43,19 +42,21 @@
         <line num="6" count="4" type="stmt"/>
         <line num="7" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
       </file>
     </package>
     <package name="BookTable.TableBody.TableRow">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="TableRow.jsx" path="/Users/roman/development/react/booksApp/src/components/BookTable/TableBody/TableRow/TableRow.jsx">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="5" count="6" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
       </file>
     </package>
     <package name="BookTable.TableHead">
@@ -66,7 +67,7 @@
         <line num="5" count="4" type="stmt"/>
         <line num="6" count="4" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
-        <line num="12" count="16" type="stmt"/>
+        <line num="11" count="16" type="stmt"/>
       </file>
     </package>
     <package name="ErrorIndicator">
@@ -114,14 +115,14 @@
       </file>
     </package>
     <package name="Pagination">
-      <metrics statements="13" coveredstatements="13" conditionals="3" coveredconditionals="3" methods="7" coveredmethods="7"/>
+      <metrics statements="13" coveredstatements="13" conditionals="5" coveredconditionals="5" methods="7" coveredmethods="7"/>
       <file name="Pagination.jsx" path="/Users/roman/development/react/booksApp/src/components/Pagination/Pagination.jsx">
-        <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
         <line num="5" count="5" type="cond" truecount="1" falsecount="0"/>
         <line num="6" count="8" type="stmt"/>
         <line num="8" count="8" type="stmt"/>
         <line num="11" count="11" type="stmt"/>
-        <line num="25" count="5" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
       </file>
       <file name="PaginationContainer.jsx" path="/Users/roman/development/react/booksApp/src/components/Pagination/PaginationContainer.jsx">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>

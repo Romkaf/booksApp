@@ -22,6 +22,7 @@ exports[`PaginationContainer should render component 1`] = `
           aria-label="pagination-page"
           className="page pageCurrent"
           onClick={[Function]}
+          tabIndex={-1}
         >
           1
         </button>
@@ -33,6 +34,7 @@ exports[`PaginationContainer should render component 1`] = `
           aria-label="pagination-page"
           className="page"
           onClick={[Function]}
+          tabIndex={0}
         >
           2
         </button>

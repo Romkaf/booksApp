@@ -1,12 +1,21 @@
+.root {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	border-bottom: 1px solid var(--grey);
+}
+
+.root:last-child {
+	border-bottom: none;
+}
+
 .ceil {
 	padding: 0.75rem;
-	vertical-align: top;
-	border-top: 1px solid var(--grey);
+	word-break: break-word;
 }
 
 @media (max-width: 500px) {
 	.ceil {
-		padding: 0.15rem;
+		padding: 0.35rem 0.25rem;
 		font-size: 16px;
 	}
 }

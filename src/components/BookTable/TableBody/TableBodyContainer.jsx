@@ -5,15 +5,7 @@ import PropTypes from 'prop-types';
 
 const TableBodyContainer = ({ books, loading }) => {
 	if (loading) {
-		return (
-			<tbody>
-				<tr>
-					<td>
-						<Spinner />
-					</td>
-				</tr>
-			</tbody>
-		);
+		return <Spinner />;
 	}
 
 	return <TableBody books={books} />;

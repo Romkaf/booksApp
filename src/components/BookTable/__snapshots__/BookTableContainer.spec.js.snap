@@ -5,54 +5,46 @@ exports[`BookTableContainer should render component 1`] = `
   <Memo(BookTable)
     books={Array []}
   >
-    <div
-      className="wrapper"
-    >
-      <table
-        className="root"
-      >
-        <Memo(TableHead)>
-          <thead
-            className="root"
+    <div>
+      <Memo(TableHead)>
+        <div
+          className="root"
+        >
+          <div
+            className="ceil"
+            key="Title"
           >
-            <tr>
-              <th
-                className="ceil"
-                key="Title"
-              >
-                Title
-              </th>
-              <th
-                className="ceil"
-                key="Authors"
-              >
-                Authors
-              </th>
-              <th
-                className="ceil"
-                key="Publisher"
-              >
-                Publisher
-              </th>
-              <th
-                className="ceil"
-                key="Date"
-              >
-                Date
-              </th>
-            </tr>
-          </thead>
-        </Memo(TableHead)>
-        <TableBodyContainer
+            Title
+          </div>
+          <div
+            className="ceil"
+            key="Authors"
+          >
+            Authors
+          </div>
+          <div
+            className="ceil"
+            key="Publisher"
+          >
+            Publisher
+          </div>
+          <div
+            className="ceil"
+            key="Date"
+          >
+            Date
+          </div>
+        </div>
+      </Memo(TableHead)>
+      <TableBodyContainer
+        books={Array []}
+      >
+        <TableBody
           books={Array []}
         >
-          <TableBody
-            books={Array []}
-          >
-            <tbody />
-          </TableBody>
-        </TableBodyContainer>
-      </table>
+          <div />
+        </TableBody>
+      </TableBodyContainer>
       <PaginationContainer>
         <Pagination
           currentPage={1}

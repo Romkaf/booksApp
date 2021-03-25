@@ -11,6 +11,7 @@ exports[`Pagination should render component with props 1`] = `
       aria-label="pagination-page"
       className="page pageCurrent"
       onClick={[Function]}
+      tabIndex={-1}
     >
       1
     </button>
@@ -22,6 +23,7 @@ exports[`Pagination should render component with props 1`] = `
       aria-label="pagination-page"
       className="page"
       onClick={[Function]}
+      tabIndex={0}
     >
       2
     </button>
@@ -33,6 +35,7 @@ exports[`Pagination should render component with props 1`] = `
       aria-label="pagination-page"
       className="page"
       onClick={[Function]}
+      tabIndex={0}
     >
       3
     </button>

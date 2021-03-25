@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableBodyContainer should render Spinner 1`] = `
-<tbody>
-  <tr>
-    <td>
-      <Spinner />
-    </td>
-  </tr>
-</tbody>
-`;
+exports[`TableBodyContainer should render Spinner 1`] = `<Spinner />`;
 
 exports[`TableBodyContainer should render TableBody 1`] = `<TableBody />`;
