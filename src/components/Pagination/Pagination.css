@@ -6,27 +6,3 @@
 	padding: 0;
 	list-style: none;
 }
-
-.page {
-	border: 1px solid var(--grey);
-	border-radius: 100%;
-	width: 43px;
-	height: 43px;
-	margin: 0 10px;
-	margin-bottom: 10px;
-	cursor: pointer;
-	transition: linear 0.2s;
-}
-
-.pageCurrent {
-	border: 2px solid var(--semi-black);
-	font-weight: 700;
-	cursor: auto;
-	pointer-events: none;
-}
-
-.page:hover:not(.pageCurrent),
-.page:focus {
-	box-shadow: 0 0 5pt 1.5pt var(--grey);
-	outline: none;
-}

@@ -15,8 +15,9 @@ export default (state = initialState, action) => {
 	switch (action.type) {
 		case FETCH_BOOKS:
 			return {
-				books: [],
-				totalCount: 0,
+				// books: [],
+				// totalCount: 0,
+				...state,
 				loading: true,
 				error: null,
 			};

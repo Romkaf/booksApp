@@ -8,5 +8,7 @@ export const fetchGetBooks = (
 	perPage = 0,
 ) =>
 	axios.get(
-		`${baseURL}volumes?q=intitle:${title}+inauthor:${author}&startIndex=${currentPage}&maxResults=${perPage}&printType=books&key=${AuthorizationKey}`,
+		`${baseURL}volumes?q=intitle:${
+			title || 'a'
+		}+inauthor:${author}&startIndex=${currentPage}&maxResults=${perPage}&printType=books&key=${AuthorizationKey}`,
 	);

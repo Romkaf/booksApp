@@ -1,23 +1,20 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import PaginationPage from './PaginationPage';
 import styles from './Pagination.css';
 
 const Pagination = ({ pages = [], onPageClick, currentPage }) => {
-	const { root, page, pageCurrent } = styles;
+	const { root } = styles;
 
 	return (
 		<ul className={root}>
-			{pages.map((it, idx) => (
-				<li key={idx}>
-					<button
-						className={currentPage == it ? `${page} ${pageCurrent}` : `${page}`}
-						aria-label="pagination-page"
-						onClick={onPageClick(it)}
-						tabIndex={currentPage == it ? -1 : 0}
-					>
-						{it}
-					</button>
-				</li>
+			{pages.map((it) => (
+				<PaginationPage
+					onPageClick={onPageClick}
+					currentPage={currentPage}
+					page={it}
+					key={it}
+				/>
 			))}
 		</ul>
 	);
@@ -29,4 +26,4 @@ Pagination.propTypes = {
 	currentPage: PropTypes.number,
 };
 
-export default Pagination;
+export default memo(Pagination);

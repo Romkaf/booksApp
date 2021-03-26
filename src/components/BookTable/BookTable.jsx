@@ -7,9 +7,9 @@ import TableBody from './TableBody';
 const BookTable = ({ books, loading }) => {
 	return (
 		<div>
+			<Pagination />
 			<TableHead />
 			<TableBody books={books} loading={loading} />
-			<Pagination />
 		</div>
 	);
 };

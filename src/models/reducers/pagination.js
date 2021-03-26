@@ -1,7 +1,7 @@
 import { SET_CURRENT_PAGE } from '@models/actions/actionTypes';
 
 const initialState = {
-	currentPage: 1,
+	currentPage: 0,
 	perPage: 5,
 };
 
@@ -10,7 +10,7 @@ export default (state = initialState, action) => {
 		case SET_CURRENT_PAGE:
 			return {
 				...state,
-				currentPage: action.payload,
+				currentPage: action.payload - 1,
 			};
 
 		default:

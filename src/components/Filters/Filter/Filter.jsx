@@ -8,7 +8,7 @@ const Filter = ({ label: title, value, onChange }) => {
 	const { field, input, label, labelSmall } = styles;
 	const classLabel = cx(label, { [labelSmall]: value });
 
-	const debouncedHandler = debounce(onChange, 300);
+	const debouncedHandler = debounce(onChange, 500);
 
 	const handleInputChange = (evt) => debouncedHandler(evt.target.value);
 
