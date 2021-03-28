@@ -2,8 +2,8 @@
 
 exports[`BookTable should render component 1`] = `
 <div>
+  <PaginationContainer />
   <Memo(TableHead) />
   <TableBodyContainer />
-  <PaginationContainer />
 </div>
 `;

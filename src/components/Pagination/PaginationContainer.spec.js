@@ -26,7 +26,7 @@ describe('PaginationContainer', () => {
 	});
 
 	it('should handler return action', () => {
-		const handler = wrapper.find('Pagination').props().onPageClick;
+		const handler = wrapper.find('PaginationPage').first().props().onPageClick;
 		expect(handler(1)()).toStrictEqual(setCurrentPage(1));
 	});
 });

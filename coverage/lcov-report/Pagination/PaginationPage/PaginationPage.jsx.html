@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for Filters/Filter/Filter.jsx</title>
+    <title>Code coverage report for Pagination/PaginationPage/PaginationPage.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">Filters/Filter</a> Filter.jsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">Pagination/PaginationPage</a> PaginationPage.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -32,7 +32,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -92,23 +92,17 @@
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
 <a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -122,49 +116,52 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import cx from 'classnames';
-import { debounce } from '@utils/debounce';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import styles from './Filter.css';
+import cx from 'classnames';
+import styles from './PaginationPage.css';
 &nbsp;
-const Filter = ({ label: title, value, onChange }) =&gt; {
-	const { field, input, label, labelSmall } = styles;
-	const classLabel = cx(label, { [labelSmall]: value });
-&nbsp;
-	const debouncedHandler = debounce(onChange, 500);
-&nbsp;
-	const handleInputChange = (evt) =&gt; debouncedHandler(evt.target.value);
+export const PaginationPage = ({ page, onPageClick, currentPage }) =&gt; {
+	const { root, current } = styles;
+	const condition = currentPage == page - 1;
+	const classBtn = cx(root, { [current]: condition });
 &nbsp;
 	return (
-		&lt;div className={field}&gt;
-			&lt;input
-				className={input}
-				type="text"
-				id={title}
-				onChange={handleInputChange}
-			/&gt;
-			&lt;label className={classLabel} htmlFor={title}&gt;
-				{title}
-			&lt;/label&gt;
-		&lt;/div&gt;
+		&lt;li&gt;
+			&lt;button
+				className={classBtn}
+				aria-label="pagination-page"
+				onClick={onPageClick(page)}
+				tabIndex={condition ? -1 : 0}
+			&gt;
+				{page}
+			&lt;/button&gt;
+		&lt;/li&gt;
 	);
 };
 &nbsp;
-Filter.propTypes = {
-	label: PropTypes.string,
-	value: PropTypes.string,
-	onChange: PropTypes.func,
+PaginationPage.propTypes = {
+	page: PropTypes.number,
+	onPageClick: PropTypes.func,
+	currentPage: PropTypes.number,
 };
 &nbsp;
-export default Filter;
+export const areEqual = (prevProps, nextProps) =&gt;
+	nextProps.currentPage !== nextProps.page - 1 &amp;&amp;
+	prevProps.currentPage !== prevProps.page - 1;
+&nbsp;
+export default memo(PaginationPage, areEqual);
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

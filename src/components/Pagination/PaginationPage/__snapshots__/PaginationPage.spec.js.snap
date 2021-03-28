@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginationPage should render component 1`] = `
+<li>
+  <button
+    aria-label="pagination-page"
+    className="root current"
+    onClick={[Function]}
+    tabIndex={-1}
+  >
+    1
+  </button>
+</li>
+`;

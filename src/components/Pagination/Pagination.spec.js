@@ -24,12 +24,12 @@ describe('Pagination', () => {
 		});
 	});
 
-	it('should call handler when button will click', () => {
-		const mockFn = jest.fn((it) => it);
-		component = setUp(props);
-		component.setProps({ onPageClick: (it) => () => mockFn(it) });
-		const firstButton = component.find('ul').childAt(0).find('button');
-		firstButton.simulate('click');
-		expect(mockFn).toHaveReturnedWith(1);
-	});
+	// it('should call handler when button will click', () => {
+	// 	const mockFn = jest.fn((it) => it);
+	// 	component = setUp(props);
+	// 	component.setProps({ onPageClick: (it) => () => mockFn(it) });
+	// 	const firstButton = component.find('ul').childAt(0).find('button');
+	// 	firstButton.simulate('click');
+	// 	expect(mockFn).toHaveReturnedWith(1);
+	// });
 });

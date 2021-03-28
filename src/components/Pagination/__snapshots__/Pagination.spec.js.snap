@@ -4,42 +4,24 @@ exports[`Pagination should render component with props 1`] = `
 <ul
   className="root"
 >
-  <li
-    key="0"
-  >
-    <button
-      aria-label="pagination-page"
-      className="page pageCurrent"
-      onClick={[Function]}
-      tabIndex={-1}
-    >
-      1
-    </button>
-  </li>
-  <li
+  <Memo(PaginationPage)
+    currentPage={1}
     key="1"
-  >
-    <button
-      aria-label="pagination-page"
-      className="page"
-      onClick={[Function]}
-      tabIndex={0}
-    >
-      2
-    </button>
-  </li>
-  <li
+    onPageClick={[Function]}
+    page={1}
+  />
+  <Memo(PaginationPage)
+    currentPage={1}
     key="2"
-  >
-    <button
-      aria-label="pagination-page"
-      className="page"
-      onClick={[Function]}
-      tabIndex={0}
-    >
-      3
-    </button>
-  </li>
+    onPageClick={[Function]}
+    page={2}
+  />
+  <Memo(PaginationPage)
+    currentPage={1}
+    key="3"
+    onPageClick={[Function]}
+    page={3}
+  />
 </ul>
 `;
 

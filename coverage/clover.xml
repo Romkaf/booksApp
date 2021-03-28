@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1616756511052" clover="3.2.0">
-  <project timestamp="1616756511052" name="All files">
-    <metrics statements="69" coveredstatements="69" conditionals="10" coveredconditionals="10" methods="30" coveredmethods="30" elements="109" coveredelements="109" complexity="0" loc="69" ncloc="69" packages="10" files="14" classes="14"/>
+<coverage generated="1616967315438" clover="3.2.0">
+  <project timestamp="1616967315438" name="All files">
+    <metrics statements="79" coveredstatements="79" conditionals="10" coveredconditionals="10" methods="33" coveredmethods="33" elements="122" coveredelements="122" complexity="0" loc="79" ncloc="79" packages="11" files="15" classes="15"/>
     <package name="App">
       <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="App.jsx" path="/Users/roman/development/react/booksApp/src/components/App/App.jsx">
@@ -12,7 +12,7 @@
       </file>
     </package>
     <package name="BookTable">
-      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <file name="BookTable.jsx" path="/Users/roman/development/react/booksApp/src/components/BookTable/BookTable.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="7" count="3" type="stmt"/>
@@ -20,11 +20,12 @@
         <line num="17" count="3" type="stmt"/>
       </file>
       <file name="BookTableContainer.jsx" path="/Users/roman/development/react/booksApp/src/components/BookTable/BookTableContainer.jsx">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="6" count="2" type="stmt"/>
         <line num="11" count="9" type="stmt"/>
         <line num="13" count="3" type="stmt"/>
         <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
         <line num="20" count="3" type="stmt"/>
       </file>
     </package>
@@ -115,25 +116,40 @@
       </file>
     </package>
     <package name="Pagination">
-      <metrics statements="13" coveredstatements="13" conditionals="5" coveredconditionals="5" methods="7" coveredmethods="7"/>
+      <metrics statements="14" coveredstatements="14" conditionals="1" coveredconditionals="1" methods="8" coveredmethods="8"/>
       <file name="Pagination.jsx" path="/Users/roman/development/react/booksApp/src/components/Pagination/Pagination.jsx">
-        <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
-        <line num="5" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="8" type="stmt"/>
-        <line num="8" count="8" type="stmt"/>
-        <line num="11" count="11" type="stmt"/>
-        <line num="26" count="5" type="stmt"/>
+        <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="6" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
       </file>
       <file name="PaginationContainer.jsx" path="/Users/roman/development/react/booksApp/src/components/Pagination/PaginationContainer.jsx">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <line num="7" count="4" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
         <line num="10" count="12" type="stmt"/>
         <line num="11" count="12" type="stmt"/>
         <line num="13" count="4" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
         <line num="18" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="Pagination.PaginationPage">
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="PaginationPage.jsx" path="/Users/roman/development/react/booksApp/src/components/Pagination/PaginationPage/PaginationPage.jsx">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="32" count="2" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
     <package name="Spinner">

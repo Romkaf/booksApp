@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import styles from './PaginationPage.css';
 
-const PaginationPage = ({ page, onPageClick, currentPage }) => {
+export const PaginationPage = ({ page, onPageClick, currentPage }) => {
 	const { root, current } = styles;
 	const condition = currentPage == page - 1;
 	const classBtn = cx(root, { [current]: condition });
@@ -23,14 +23,13 @@ const PaginationPage = ({ page, onPageClick, currentPage }) => {
 };
 
 PaginationPage.propTypes = {
-	pages: PropTypes.number,
+	page: PropTypes.number,
 	onPageClick: PropTypes.func,
 	currentPage: PropTypes.number,
 };
 
-export default memo(PaginationPage, (prevProps, nextProps) => {
-	return (
-		nextProps.currentPage !== nextProps.page - 1 &&
-		prevProps.currentPage !== prevProps.page - 1
-	);
-});
+export const areEqual = (prevProps, nextProps) =>
+	nextProps.currentPage !== nextProps.page - 1 &&
+	prevProps.currentPage !== prevProps.page - 1;
+
+export default memo(PaginationPage, areEqual);

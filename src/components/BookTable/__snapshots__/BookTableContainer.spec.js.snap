@@ -6,6 +6,17 @@ exports[`BookTableContainer should render component 1`] = `
     books={Array []}
   >
     <div>
+      <PaginationContainer>
+        <Memo(Pagination)
+          currentPage={1}
+          onPageClick={[Function]}
+          pages={Array []}
+        >
+          <ul
+            className="root"
+          />
+        </Memo(Pagination)>
+      </PaginationContainer>
       <Memo(TableHead)>
         <div
           className="root"
@@ -45,17 +56,6 @@ exports[`BookTableContainer should render component 1`] = `
           <div />
         </TableBody>
       </TableBodyContainer>
-      <PaginationContainer>
-        <Pagination
-          currentPage={1}
-          onPageClick={[Function]}
-          pages={Array []}
-        >
-          <ul
-            className="root"
-          />
-        </Pagination>
-      </PaginationContainer>
     </div>
   </Memo(BookTable)>
 </BookTableContainer>
