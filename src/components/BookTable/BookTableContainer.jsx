@@ -7,15 +7,15 @@ const BookTableContainer = () => {
 	const {
 		books: { books, loading },
 		filters,
-		pagination,
+		pagination: { currentPage, perPage },
 	} = useSelector((state) => state);
 
 	const dispatch = useDispatch();
 
-	React.useEffect(() => dispatch(fetchBooks({ ...filters, ...pagination })), [
-		filters,
-		pagination,
-	]);
+	React.useEffect(
+		() => dispatch(fetchBooks({ ...filters, currentPage, perPage })),
+		[filters, currentPage, perPage],
+	);
 
 	return <BookTable books={books} loading={loading} />;
 };
